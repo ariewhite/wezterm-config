@@ -103,8 +103,8 @@ Most of the key bindings revolve around a <kbd>SUPER</kbd> and <kbd>SUPER_REV</k
 
 | Keys                               | Action                                           |
 | ---------------------------------- | ------------------------------------------------ |
-| <kbd>SUPER</kbd>+<kbd>\\</kbd>     | `SplitVertical` <sub>(CurrentPaneDomain)</sub>   |
-| <kbd>SUPER_REV</kbd>+<kbd>\\</kbd> | `SplitHorizontal` <sub>(CurrentPaneDomain)</sub> |
+| <kbd>SUPER_REV</kbd>+<kbd>\\</kbd>     | `SplitVertical` <sub>(CurrentPaneDomain)</sub>   |
+| <kbd>SUPER</kbd>+<kbd>\\</kbd>         | `SplitHorizontal` <sub>(CurrentPaneDomain)</sub> |
 
 ##### Panes: Zoom+Close Pane
 

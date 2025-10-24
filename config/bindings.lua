@@ -11,6 +11,7 @@ if platform.is_mac then
 elseif platform.is_win or platform.is_linux then
    mod.SUPER = 'ALT' -- to not conflict with Windows key shortcuts
    mod.SUPER_REV = 'ALT|CTRL'
+   mod.CTRL = 'CTRL'
 end
 
 -- stylua: ignore
@@ -166,12 +167,12 @@ local keys = {
    -- panes: split panes
    {
       key = [[\]],
-      mods = mod.SUPER,
+      mods = mod.SUPER_REV,
       action = act.SplitVertical({ domain = 'CurrentPaneDomain' }),
    },
    {
       key = [[\]],
-      mods = mod.SUPER_REV,
+      mods = mod.SUPER,
       action = act.SplitHorizontal({ domain = 'CurrentPaneDomain' }),
    },
 
@@ -186,7 +187,7 @@ local keys = {
    { key = 'l',     mods = mod.SUPER_REV, action = act.ActivatePaneDirection('Right') },
    {
       key = 'p',
-      mods = mod.SUPER_REV,
+      mods = mod.SUPER,
       action = act.PaneSelect({ alphabet = '1234567890', mode = 'SwapWithActiveKeepFocus' }),
    },
 
