@@ -1,6 +1,8 @@
 <h2 align="center">My WezTerm Config</h2>
 <h4 align="center">forked from KevinSilvester/wezterm-config</h2>
 
+## Preview
+![demo](demo.png)
 
 ### All Key Bindings
 
