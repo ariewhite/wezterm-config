@@ -1,7 +1,7 @@
 -- A slightly altered version of catppucchin mocha
 -- stylua: ignore
 local mocha = {
-   rosewater = '#f5e0dc',
+   rosewater = '#f6e0dc',
    flamingo  = '#f2cdcd',
    pink      = '#f5c2e7',
    mauve     = '#cba6f7',
@@ -29,7 +29,7 @@ local mocha = {
    crust     = '#11111b',
 }
 
-local colorscheme = {
+local colorscheme_mocha = {
    foreground = mocha.text,
    background = mocha.base,
    cursor_bg = mocha.rosewater,
@@ -91,4 +91,92 @@ local colorscheme = {
    compose_cursor = mocha.flamingo,
 }
 
-return colorscheme
+-- violet night
+local violet_night = {
+  deep_violet = '#1a1425',
+  dark_violet = '#221733',
+  purple      = '#7c3aed',
+  magenta     = '#c084fc',
+  lilac       = '#d8b4fe',
+  neon_pink   = '#f472b6',
+  electric_blue = '#60a5fa',
+  cyan        = '#5eead4',
+  green       = '#4ade80',
+  yellow      = '#facc15',
+  red         = '#f43f5e',
+  gray_light  = '#cbd5e1',
+  gray_mid    = '#94a3b8',
+  gray_dark   = '#475569',
+  background  = '#120f1a',
+  surface     = '#1e1b29',
+  text        = '#e5e7eb',
+}
+
+local colorscheme_violet = {
+  foreground = violet_night.text,
+  background = violet_night.background,
+
+  cursor_bg = violet_night.magenta,
+  cursor_border = violet_night.magenta,
+  cursor_fg = violet_night.surface,
+
+  selection_bg = violet_night.surface,
+  selection_fg = violet_night.text,
+
+  ansi = {
+    '#0f0f17', -- black
+    violet_night.red,          -- red
+    violet_night.green,        -- green
+    violet_night.yellow,       -- yellow
+    violet_night.electric_blue,-- blue
+    violet_night.purple,       -- magenta/purple
+    violet_night.cyan,         -- cyan
+    '#e2e8f0',                 -- white
+  },
+  brights = {
+    '#1e293b', -- black
+    '#fb7185', -- red
+    '#86efac', -- green
+    '#fde047', -- yellow
+    '#60a5fa', -- blue
+    '#a78bfa', -- magenta/purple
+    '#67e8f9', -- cyan
+    '#f8fafc', -- white
+  },
+
+  tab_bar = {
+    background = 'rgba(10, 10, 20, 0.6)',
+    active_tab = {
+      bg_color = violet_night.purple,
+      fg_color = violet_night.text,
+    },
+    inactive_tab = {
+      bg_color = violet_night.surface,
+      fg_color = violet_night.gray_mid,
+    },
+    inactive_tab_hover = {
+      bg_color = violet_night.dark_violet,
+      fg_color = violet_night.text,
+    },
+    new_tab = {
+      bg_color = violet_night.background,
+      fg_color = violet_night.lilac,
+    },
+    new_tab_hover = {
+      bg_color = violet_night.surface,
+      fg_color = violet_night.neon_pink,
+      italic = true,
+    },
+  },
+
+  visual_bell = violet_night.red,
+  indexed = {
+    [16] = violet_night.neon_pink,
+    [17] = violet_night.magenta,
+  },
+  scrollbar_thumb = violet_night.dark_violet,
+  split = violet_night.gray_dark,
+  compose_cursor = violet_night.cyan,
+}
+
+return colorscheme_violet

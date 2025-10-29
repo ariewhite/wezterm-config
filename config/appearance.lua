@@ -4,7 +4,7 @@ local colors = require('colors.custom')
 
 return {
    max_fps = 120,
-   front_end = 'WebGpu', ---@type 'WebGpu' | 'OpenGL' | 'Software'
+   front_end = 'Software', ---@type 'WebGpu' | 'OpenGL' | 'Software'
    webgpu_power_preference = 'HighPerformance',
    webgpu_preferred_adapter = gpu_adapters:pick_best(),
    -- webgpu_preferred_adapter = gpu_adapters:pick_manual('Dx12', 'IntegratedGpu'),
@@ -32,7 +32,7 @@ return {
    hide_tab_bar_if_only_one_tab = false,
    use_fancy_tab_bar = false,
    tab_max_width = 25,
-   show_tab_index_in_tab_bar = false,
+   show_tab_index_in_tab_bar = true,
    switch_to_last_active_tab_when_closing_tab = true,
 
    -- command palette
@@ -71,4 +71,7 @@ return {
       fade_out_duration_ms = 250,
       target = 'CursorColor',
    },
+
+   window_decorations = "INTEGRATED_BUTTONS|RESIZE",
+   window_background_opacity = 1.0,
 }

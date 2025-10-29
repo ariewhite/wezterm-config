@@ -22,7 +22,7 @@ EVENT_OPTS.schema = {
       name = 'unseen_icon',
       type = 'string',
       enum = { 'circle', 'numbered_circle', 'numbered_box' },
-      default = 'circle',
+      default = 'numbered_box',
    },
    {
       name = 'hide_active_tab_unseen',
