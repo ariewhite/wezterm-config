@@ -30,4 +30,6 @@ function Config:append(new_options)
    return self
 end
 
+WEZTERM_LOG=debug
+
 return Config

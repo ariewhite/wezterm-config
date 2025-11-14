@@ -125,14 +125,14 @@ local keys = {
       end),
    },
    {
-      key = [[,]],
+      key = [[;]],
       mods = mod.SUPER,
       action = wezterm.action_callback(function(window, _pane)
          backdrops:cycle_back(window)
       end),
    },
    {
-      key = [[.]],
+      key = [[']],
       mods = mod.SUPER,
       action = wezterm.action_callback(function(window, _pane)
          backdrops:cycle_forward(window)
