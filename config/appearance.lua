@@ -37,7 +37,8 @@ return {
 
    -- command palette
    command_palette_fg_color = '#b4befe',
-   command_palette_bg_color = '#11111b',
+   -- command_palette_bg_color = '#11111b',
+   command_palette_bg_color = '#000000',
    command_palette_font_size = 12,
    command_palette_rows = 25,
 

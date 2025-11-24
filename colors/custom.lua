@@ -134,7 +134,7 @@ local colorscheme_violet = {
     '#e2e8f0',                 -- white
   },
   brights = {
-    '#1e293b', -- black
+    '#4b5563', -- black / gray
     '#fb7185', -- red
     '#86efac', -- green
     '#fde047', -- yellow
