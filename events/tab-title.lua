@@ -93,19 +93,36 @@ local RENDER_VARIANTS = {
 
 ---@type table<string, Cells.SegmentColors>
 -- stylua: ignore
+-- local colors = {
+--    text_default          = { bg = '#45475A', fg = '#1C1B19' },
+--    text_hover            = { bg = '#5D87A3', fg = '#1C1B19' },
+--    text_active           = { bg = '#c084fc', fg = '#11111B' },
+--
+--    unseen_output_default = { bg = '#45475A', fg = '#FFA066' },
+--    unseen_output_hover   = { bg = '#5D87A3', fg = '#FFA066' },
+--    unseen_output_active  = { bg = '#c084fc', fg = '#FFA066' },
+--
+--    scircle_default       = { bg = 'rgba(0, 0, 0, 0.4)', fg = '#45475A' },
+--    scircle_hover         = { bg = 'rgba(0, 0, 0, 0.4)', fg = '#5D87A3' },
+--    scircle_active        = { bg = 'rgba(0, 0, 0, 0.4)', fg = '#c084fc' },
+-- }
+-- everforest_colors 
+---@type table<string, Cells.SegmentColors>
+-- stylua: ignore
 local colors = {
-   text_default          = { bg = '#45475A', fg = '#1C1B19' },
-   text_hover            = { bg = '#5D87A3', fg = '#1C1B19' },
-   text_active           = { bg = '#c084fc', fg = '#11111B' },
+   text_default          = { bg = '#3a454a', fg = '#d3c6aa' },
+   text_hover            = { bg = '#445055', fg = '#d3c6aa' },
+   text_active           = { bg = '#a7c080', fg = '#2b3339' },
 
-   unseen_output_default = { bg = '#45475A', fg = '#FFA066' },
-   unseen_output_hover   = { bg = '#5D87A3', fg = '#FFA066' },
-   unseen_output_active  = { bg = '#c084fc', fg = '#FFA066' },
+   unseen_output_default = { bg = '#3a454a', fg = '#e69875' },
+   unseen_output_hover   = { bg = '#445055', fg = '#e69875' },
+   unseen_output_active  = { bg = '#a7c080', fg = '#2b3339' },
 
-   scircle_default       = { bg = 'rgba(0, 0, 0, 0.4)', fg = '#45475A' },
-   scircle_hover         = { bg = 'rgba(0, 0, 0, 0.4)', fg = '#5D87A3' },
-   scircle_active        = { bg = 'rgba(0, 0, 0, 0.4)', fg = '#c084fc' },
+   scircle_default       = { bg = 'rgba(0, 0, 0, 0.4)', fg = '#3a454a' },
+   scircle_hover         = { bg = 'rgba(0, 0, 0, 0.4)', fg = '#445055' },
+   scircle_active        = { bg = 'rgba(0, 0, 0, 0.4)', fg = '#a7c080' },
 }
+
 
 ---
 -- ================

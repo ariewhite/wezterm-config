@@ -178,5 +178,93 @@ local colorscheme_violet = {
   split = violet_night.gray_dark,
   compose_cursor = violet_night.cyan,
 }
+--
+local everforest = {
+  bg0         = '#2b3339',
+  bg1         = '#323c41',
+  bg2         = '#3a454a',
+  bg3         = '#445055',
+  bg4         = '#4c555b',
 
-return colorscheme_violet
+  fg          = '#d3c6aa',
+  grey0       = '#7a8478',
+  grey1       = '#859289',
+
+  red         = '#e67e80',
+  orange      = '#e69875',
+  yellow      = '#dbbc7f',
+  green       = '#a7c080',
+  aqua        = '#83c092',
+  blue        = '#7fbbb3',
+  purple      = '#d699b6',
+}
+
+local colorscheme_everforest = {
+  foreground = everforest.fg,
+  background = everforest.bg0,
+
+  cursor_bg = everforest.green,
+  cursor_border = everforest.green,
+  cursor_fg = everforest.bg0,
+
+  selection_bg = everforest.bg2,
+  selection_fg = everforest.fg,
+
+  ansi = {
+    everforest.bg4,   -- black
+    everforest.red,   -- red
+    everforest.green, -- green
+    everforest.yellow,-- yellow
+    everforest.blue,  -- blue
+    everforest.purple,-- magenta
+    everforest.aqua,  -- cyan
+    everforest.fg,    -- white
+  },
+
+  brights = {
+    everforest.grey0, -- bright black
+    '#f85552',        -- bright red
+    '#8da101',        -- bright green
+    '#dfa000',        -- bright yellow
+    '#3a94c5',        -- bright blue
+    '#df69ba',        -- bright magenta
+    '#35a77c',        -- bright cyan
+    '#ffffff',        -- bright white
+  },
+
+  tab_bar = {
+    background = 'rgba(0, 0, 0, 0.2)',
+    active_tab = {
+      bg_color = everforest.green,
+      fg_color = everforest.bg0,
+    },
+    inactive_tab = {
+      bg_color = everforest.bg1,
+      fg_color = everforest.grey1,
+    },
+    inactive_tab_hover = {
+      bg_color = everforest.bg2,
+      fg_color = everforest.fg,
+    },
+    new_tab = {
+      bg_color = everforest.bg0,
+      fg_color = everforest.blue,
+    },
+    new_tab_hover = {
+      bg_color = everforest.bg2,
+      fg_color = everforest.green,
+      italic = true,
+    },
+  },
+
+  visual_bell = everforest.red,
+  indexed = {
+    [16] = everforest.orange,
+    [17] = everforest.purple,
+  },
+  scrollbar_thumb = everforest.bg3,
+  split = everforest.bg4,
+  compose_cursor = everforest.aqua,
+}
+
+return colorscheme_everforest
