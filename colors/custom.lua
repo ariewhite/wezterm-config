@@ -116,8 +116,8 @@ local colorscheme_violet = {
   foreground = violet_night.text,
   background = violet_night.background,
 
-  cursor_bg = violet_night.magenta,
-  cursor_border = violet_night.magenta,
+  cursor_bg = violet_night.neon_pink,
+  cursor_border = violet_night.neon_pink,
   cursor_fg = violet_night.surface,
 
   selection_bg = violet_night.surface,
@@ -145,9 +145,9 @@ local colorscheme_violet = {
   },
 
   tab_bar = {
-    background = 'rgba(10, 10, 20, 0.6)',
+    background = 'rgba(0, 0, 0, 0.2)',
     active_tab = {
-      bg_color = violet_night.purple,
+      bg_color = violet_night.neon_pink,
       fg_color = violet_night.text,
     },
     inactive_tab = {
@@ -172,7 +172,7 @@ local colorscheme_violet = {
   visual_bell = violet_night.red,
   indexed = {
     [16] = violet_night.neon_pink,
-    [17] = violet_night.magenta,
+    [17] = violet_night.neon_pink,
   },
   scrollbar_thumb = violet_night.dark_violet,
   split = violet_night.gray_dark,

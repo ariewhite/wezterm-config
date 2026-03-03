@@ -1,11 +1,18 @@
 local wezterm = require('wezterm')
 local platform = require('utils.platform')
 
-local font_family = 'Maple Mono'
--- local font_family = 'JetBrainsMono Nerd Font'
+-- local font_family = 'Maple Mono'
+local font_family = 'JetBrainsMono Nerd Font'
 -- local font_family = 'CartographCF Nerd Font'
+-- local font_family = 'Google Sans Code'
+-- local font_family = 'AnonymicePro Nerd Font'
+-- local font_family = 'BitstromWera Nerd Font Propo'
+-- local font_family = 'CaskaydiaMono NFM'
+-- local font_family = 'Cascadia Code'
+-- local font_family = 'MesloLGS Nerd Font Mono'
 
 local font_size = platform.is_mac and 11 or 12
+
 
 return {
    font = wezterm.font({
